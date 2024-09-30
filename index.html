@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi StoryMap con Leyenda Dinámica</title>
+    <link rel="stylesheet" href="lib/leaflet.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+            <div id="slides">
+                <!-- Diapositivas -->
+                <div class="slide" data-lat="4.624309" data-lng="-74.065288" data-zoom="18">
+                    <h2>Índice</h2>
+                    <div id="index"></div>
+                </div>
+                <!-- Más diapositivas según sea necesario -->
+
+                <div class="slide" data-lat="4.624309" data-lng="-74.065288" data-zoom="18">
+                    <h2>¿Cuál es el contexto previo a la intervención del Parque Nacional?</h2>
+                    <figure>
+                        <img src="assets/images/Paruqe nacional.jpg" alt="Imagen 1">
+                        <figcaption>Parque Nacional antes de la intervención</figcaption> <!-- Título de la imagen -->
+                    </figure>
+
+                    <p>Actores: <u><strong style="color: red;">45</strong></u></p>
+                    <p>Residuos: <u><strong style="color: red;">125</strong></u></p>
+                    <p>Escenarios: <u><strong style="color: red;">30</strong></u></p>
+
+                    <p>En días entre semana no es muy habitado pero transitan estudiantes, habitantes del sector y personas que trabajan en la zona, en fines de semana hay mayor afluencia 
+                    de personas que vienen de otras zonas de la ciudad para hacer deporte, descansar en familia y otras actividades recreativas. </p>
+
+                </div>
+
+            </div>
+        </div>
+        <div id="map-container">
+            <div id="map"></div>
+            <div id="backToIndexButton">Volver al Índice</div>
+            <div id="legend">
+                <button id="toggle-legend">Minimizar</button> <!-- Botón para minimizar la leyenda -->
+                <div id="legend-content">
+                    <!-- Aquí se generará el contenido de la leyenda dinámicamente -->
+                </div>
+            </div>
+        </div>    
+    </div>
+    <script src="lib/leaflet.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
